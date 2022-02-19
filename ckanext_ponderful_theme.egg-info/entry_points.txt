@@ -1,6 +1,7 @@
 
         [ckan.plugins]
-        ponderful_theme=ckanext.ponderful_theme.plugin:Ponderful_ThemePlugin
-	[babel.extractors]
-	ckan = ckan.lib.extract:extract_ckan
+        ponderful_theme=ckanext.ponderful_theme.plugin:PonderfulThemePlugin
+
+        [babel.extractors]
+        ckan = ckan.lib.extract:extract_ckan
     

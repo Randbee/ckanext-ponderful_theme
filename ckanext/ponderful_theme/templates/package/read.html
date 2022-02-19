@@ -2,7 +2,7 @@
 
 {% block primary_content_inner %}
   {{ super() }}
-
+  
   {% if pkg.spatial  %}
     {% snippet "spatial/snippets/dataset_map.html", extent=pkg.spatial %}
   {% endif %}

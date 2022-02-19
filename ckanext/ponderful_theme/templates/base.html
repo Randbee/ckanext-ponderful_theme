@@ -1,6 +1,8 @@
 {% ckan_extends %}
 
-{% block styles %}
+{% block custom_styles %}
   {{ super() }}
-  <link rel="stylesheet" href="/ponderful_theme.css" />
+
+  {% asset 'ponderful_theme/theme-css' %}
+  
 {% endblock %}

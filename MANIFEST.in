@@ -1,2 +1,5 @@
 include README.rst
-recursive-include ckanext/ponderful_theme *.html *.json *.js *.less *.css
+include LICENSE
+include requirements.txt
+recursive-include ckanext/ponderful_theme *.html *.json *.js *.less *.css *.mo *.yml
+recursive-include ckanext/ponderful_theme/migration *.ini *.py *.mako

@@ -1,0 +1,213 @@
+:root {
+    --primary-color: #28b573;
+    --secondary-color: #2daae1;
+    --pri-color-dark: #008447;
+    --sec-color-dark: #007baf;
+    --pri-color-light:#66e8a2;
+    --sec-color-light:#71dcff;
+  }
+  
+/* this is in the assets  */
+
+/* =====================================================
+   The "account masthead" bar across the top of the site
+   ===================================================== */
+
+.account-masthead {
+    background-color: var(--primary-color);
+}
+/* The "bubble" containing the number of new notifications. */
+.account-masthead .account .notifications a span {
+  background-color: white;
+}
+/* The text and icons in the user account info. */
+.account-masthead .account ul li a {
+  color: rgba(255, 255, 255, 0.6);
+}
+/* The user account info text and icons, when the user's pointer is hovering
+   over them. */
+.account-masthead .account ul li a:hover {
+  color: rgba(255, 255, 255, 0.7);
+  background-color:var(--secondary-color);
+}
+
+
+/* ========================================================================
+   The main masthead bar that contains the site logo, nav links, and search
+   ======================================================================== */
+
+.masthead {
+  background-color: white;
+}
+
+/* The "navigation pills" in the masthead (the links to Datasets,
+   Organizations, etc) initial state */
+.masthead .navigation .nav-pills a {
+    color:var(--primary-color);
+}
+
+/* The "navigation pills" in the masthead (the links to Datasets,
+   Organizations, etc) when the user's pointer hovers over them. */
+.masthead .navigation .nav-pills li a:hover {
+  background-color: var(--secondary-color);
+  color: white;
+  font-weight: bold;
+}
+/* The "active" navigation pill (for example, when you're on the /dataset page
+   the "Datasets" link is active). */
+.masthead .navigation .nav-pills li.active a {
+  background-color: var(--secondary-color);
+  color: white;
+  font-weight: bold;
+}
+
+/* The "box shadow" effect that appears around the search box when it
+   has the keyboard cursor's focus. */
+.masthead input[type="text"]:focus {
+  -webkit-box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.7);
+  box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.7);
+}
+
+
+/* ===========================================
+   The content in the middle of the front page
+   =========================================== */
+
+/* Remove the "box shadow" effect around various boxes on the page. */
+.box {
+  box-shadow: none;
+}
+
+/* Add a border line between the top and bottom halves of the front page. */
+.homepage [role="main"] {
+  border-top: 1px solid rgb(204, 204, 204);
+  background-color:#eeeeee; 
+}
+
+/* Remove the borders around the "Welcome to CKAN" and "Search Your Data"
+   boxes. */
+.hero {
+    background: url("/pond.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--primary-color)
+    /* height: 264px;  */
+}
+
+/* Remove the borders around the "Welcome to CKAN" and "Search Your Data"
+   boxes. */
+.hero .box {
+  border: none;
+}
+/* Change the colors of the "Search Your Data" box. */
+.homepage .module-search .module-content {
+  color: white;
+  background-color: var(--primary-color);
+}
+/* Change the color of the "Popular Tags" box. */
+.homepage .module-search .tags {
+  background-color: var(--secondary-color);
+}
+
+/* Change the background color of the tags bubbles. */
+.homepage .module-search .tag:hover {
+    background-color: var(--primary-color);
+    border-color: var(--pri-color-dark)
+  }
+
+/* Remove some padding. This makes the bottom edges of the "Welcome to CKAN"
+   and "Search Your Data" boxes line up. */
+.module-content:last-child {
+  padding-bottom: 0px;
+}
+.homepage .module-search {
+  padding: 0px;
+}
+
+/* ====================================
+   The footer at the bottom of the site
+   ==================================== */
+
+.site-footer,
+body {
+  background-color: var(--primary-color);
+}
+/* The text in the footer. */
+.site-footer,
+.site-footer label,
+.site-footer small {
+  color: rgba(255, 255, 255, 0.6);
+}
+/* The link texts in the footer. */
+.site-footer a {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* change the size of the logo */
+.logo img {
+    max-width:250px;
+    padding:5px;
+}
+
+/* add some padding to the eu flag in the footer */
+.eu-flag-footer {
+    padding-right: 5px;
+    padding-bottom: 5px;
+  }
+
+/* change the layout of the buttons */
+.btn-primary {
+    background-color: var(--secondary-color);
+    background-image: linear-gradient(to bottom, var(--secondary-color), var(--secondary-color));
+    background-repeat: repeat-x;
+    border-color: rgba(0, 0, 0, 0.1);
+    color: white;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.btn-primary:hover {
+    border-color: var(--sec-color-dark);
+}
+
+/* change background color of the nav items */
+.nav-item.active > a,
+.nav-aside li.active a {
+  background-color: var(--pri-color-light);
+}
+
+/* change the background color of the nav items when hovering */
+.nav-item.active > a:hover,
+.nav-aside li.active a:hover {
+    background-color: var(--primary-color);
+}
+  
+/* change the color of the filter pills  */
+.pill {
+    background-color: var(--primary-color);
+  }
+
+/* set color for the item count bubbles in the dataset search  */
+.item-count {
+  background-color: var(--secondary-color);
+}
+
+/* breaks up a very long title name over multiple lines if needed */
+.module h1 {
+  word-break: break-word;
+}
+
+/* Adjust the expansion size of the Leaflet mini map for search query  */
+
+.dataset-map-expanded #dataset-map {
+  width: 1170px !important;
+  height: 335px !important;
+  top: -350px !important;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.05);
+
+}
+.dataset-map-expanded #dataset-map #dataset-map-container {
+  height: 245px !important;
+}
